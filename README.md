@@ -1,4 +1,4 @@
 redis-pool
 ==========
 
-Redis pool implementation for gosexy/redis
+Golang redis pool implementation for gosexy/redis
