@@ -1,15 +1,9 @@
 package redispool
 
-import (
-	"errors"
-	"log"
-
-	"github.com/gosexy/redis"
-)
+import "github.com/gosexy/redis"
 
 type redisPool struct {
 	connections chan *redis.Client
-	maxIdle     int
 	connFn      func() (*redis.Client, error) // function to create new connection.
 }
 
