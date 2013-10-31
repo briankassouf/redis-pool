@@ -14,7 +14,6 @@ type redisPool struct {
 }
 
 func (this *redisPool) Get() (*redis.Client, bool) {
-
 	var conn *redis.Client
 	select {
 	case conn = <-this.connections:
